@@ -1,0 +1,156 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+/* =========================
+   THEME VARIABLES
+========================= */
+
+:root {
+    --primary-clr: #10b981;
+    --background-clr: #f3f4f6;
+    --text-color: #111827;
+
+    --theme-transition: 250ms ease;
+}
+
+[data-theme="dark"] {
+    --primary-clr: #34d399;
+    --background-clr: #0f172a;
+    --text-color: #e5e7eb;
+}
+
+/* =========================
+   RESET & BASE
+========================= */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+
+    color: var(--text-color);
+    background-color: var(--background-clr);
+
+    transition:
+        background-color var(--theme-transition),
+        color var(--theme-transition);
+}
+
+/* Hide scrollbar */
+*::-webkit-scrollbar {
+    display: none;
+}
+
+/* =========================
+   LAYOUT
+========================= */
+
+header,
+section {
+    position: relative;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    padding: 5% 2rem;
+
+    transition:
+        background-color var(--theme-transition),
+        color var(--theme-transition);
+}
+/* =========================
+   TYPOGRAPHY
+========================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Inter", sans-serif;
+    color: var(--text-color);
+    transition: color var(--theme-transition);
+}
+
+a {
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color var(--theme-transition);
+}
+
+
+/* =========================
+   SHADOWS
+========================= */
+
+.shadow {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    transition: box-shadow var(--theme-transition);
+}
+
+.shadow-lg {
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
+    transition: box-shadow var(--theme-transition);
+}
+
+.shadow-xl {
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.25);
+    transition: box-shadow var(--theme-transition);
+}
+
+/* =========================
+   UTILITIES
+========================= */
+
+.text-primary {
+    color: var(--primary-clr) !important;
+    transition: color var(--theme-transition);
+}
+
+.text-vue {
+    color: #42b883 !important;
+}
+
+.text-php {
+    color: #4f5b93 !important;
+}
+
+.text-json {
+    color: #d3b251 !important;
+}
+
+.hstack {
+    display: flex;
+    flex-direction: row;
+}
+
+.vstack {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media screen and (max-width: 768px) {
+
+    .w-25,
+    .w-50,
+    .w-75 {
+        width: 100% !important;
+    }
+}

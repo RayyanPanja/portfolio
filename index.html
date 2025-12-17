@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rayyan | Portfolio</title>
+
+    <meta name="description"
+        content="Rayyan Panja's portfolio website, showcasing his skills and experience as a web developer">
+    <meta name="keywords"
+        content="web development, php, laravel, vue.js, javascript, html, css, bootstrap, portfolio, rayyan panja">
+    <meta name="author" content="Rayyan Panja">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap">
+
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="cs-navbar">
+        <div class="cs-nav-brand">
+            <h2>&lt;Rayyan /&gt;</h2>
+            <button id="navToggleBtn" class="btn btn-sm btn-outline-primary" onclick="toggleNavbar()">
+                <i class="bi bi-list"></i>
+            </button>
+        </div>
+        <div class="cs-nav-links collapsed">
+            <a href="#home" class="cs-nav-link active">
+                <i class="bi bi-house-door"></i>
+                Home
+            </a>
+            <a href="#about" class="cs-nav-link">
+                <i class="bi bi-info-circle"></i>
+                About
+            </a>
+            <a href="#projects" class="cs-nav-link">
+                <i class="bi bi-briefcase"></i>
+                Projects
+            </a>
+            <a href="#contact" class="cs-nav-link">
+                <i class="bi bi-telephone"></i>
+                Contact
+            </a>
+            <button id="themeChangeBtn" class="theme-change-btn" onclick="changeTheme()">
+                <i id="themeIcon" class="bi bi-moon"></i>
+            </button>
+        </div>
+    </nav>
+    <!-- NAVBAR -->
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Hello, I'm <span class="text-primary fw-bold">Rayyan Panja</span></h1>
+            <div class="w-75">
+                <p>I'm a Web Developer with expertise in
+                    <a href="https://laravel.com/" target="_blank"
+                        class="text-php fw-bold text-decoration-underline">PHP (Laravel)</a>,
+                    <a href="https://vuejs.org/" target="_blank"
+                        class="text-vue fw-bold text-decoration-underline">JavaScript (Vue.js)</a>,
+                    and other web development technologies. I have a strong passion for building scalable, efficient,
+                    and user-friendly web applications. With a solid understanding of web development principles, I'm
+                    able to craft solutions that meet the needs of both users and businesses. Whether it's building
+                    <span class="text-json fw-bold">Custom RESTful APIs</span> , creating a responsive
+                    UI, or optimizing
+                    database
+                    performance, I'm always looking for
+                    ways to improve my skills and deliver high-quality results.
+                </p>
+            </div>
+        </div>
+    </header>
+    <!-- Hero Section -->
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title fs-1">
+            Brief Introduction
+        </h2>
+
+        <!-- Boring Text -->
+        <div class="row align-items-center justify-content-center mb-3">
+            <div class="col-12 col-lg-8">
+                <p class="text-center">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente quisquam nihil sed nobis
+                    perspiciatis ratione. Qui error vel porro, et facilis architecto. Autem at inventore dolores
+                    necessitatibus minus ipsum recusandae.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente quisquam nihil sed nobis
+                    perspiciatis ratione. Qui error vel porro, et facilis architecto. Autem at inventore dolores
+                    necessitatibus minus ipsum recusandae.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente quisquam nihil sed nobis
+                    perspiciatis ratione. Qui error vel porro, et facilis architecto. Autem at inventore dolores
+                    necessitatibus minus ipsum recusandae.
+                </p>
+            </div>
+            <div class="col-12 col-lg-8">
+                <p class="text-center">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente quisquam nihil sed nobis
+                    perspiciatis ratione. Qui error vel porro, et facilis architecto. Autem at inventore dolores
+                    necessitatibus minus ipsum recusandae.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente quisquam nihil sed nobis
+                    perspiciatis ratione. Qui error vel porro, et facilis architecto. Autem at inventore dolores
+                    necessitatibus minus ipsum recusandae.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente quisquam nihil sed nobis
+                    perspiciatis ratione. Qui error vel porro, et facilis architecto. Autem at inventore dolores
+                    necessitatibus minus ipsum recusandae.
+                </p>
+            </div>
+        </div>
+        <!-- Boring Text -->
+
+        <!-- Skills -->
+        <div class="row mb-3 align-items-center justify-content-center">
+            <div class="col-12 mb-4">
+                <h3 class="fs-2 text-center">Skills</h3>
+            </div>
+            <div class="col-12 col-lg-8 mb-4">
+                <div class="hstack align-items-center justify-content-center flex-wrap">
+                    <div class="skill-pill fw-bold fs-5 mb-4 mx-3">
+                        <i class="bi bi-filetype-html"></i>
+                        <span>HTML</span>
+                    </div>
+                    <div class="skill-pill fw-bold fs-5 mb-4 mx-3">
+                        <i class="bi bi-filetype-css"></i>
+                        <span>CSS</span>
+                    </div>
+                    <div class="skill-pill fw-bold fs-5 mb-4 mx-3">
+                        <i class="bi bi-filetype-js"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill-pill fw-bold fs-5 mb-4 mx-3">
+                        <i class="bi bi-bootstrap"></i>
+                        <span>Bootstrap</span>
+                    </div>
+                    <div class="skill-pill fw-bold fs-5 mb-4 mx-3">
+                        <i class="bi bi-filetype-php"></i>
+                        <span>PHP</span>
+                    </div>
+                    <div class="skill-pill fw-bold fs-5 mb-4 mx-3">
+                        <i class="bi bi-filetype-sql"></i>
+                        <span>SQL</span>
+                    </div>
+                    <div class="skill-pill fw-bold fs-5 mb-4 mx-3">
+                        <i class="bi bi-code-slash"></i>
+                        <span>Laravel</span>
+                    </div>
+                    <div class="skill-pill fw-bold fs-5 mb-4 mx-3">
+                        <i class="bi bi-code-slash"></i>
+                        <span>Vue</span>
+                    </div>
+                    <div class="skill-pill fw-bold fs-5 mb-4 mx-3">
+                        <i class="bi bi-code-slash"></i>
+                        <span>React</span>
+                    </div>
+                    <div class="skill-pill fw-bold fs-5 mb-4 mx-3">
+                        <i class="bi bi-code-slash"></i>
+                        <span>Express Js</span>
+                    </div>
+                    <div class="skill-pill fw-bold fs-5 mb-4 mx-3">
+                        <i class="bi bi-stripe"></i>
+                        <span>Stripe</span>
+                    </div>
+                    <div class="skill-pill fw-bold fs-5 mb-4 mx-3">
+                        <i class="bi bi-filetype-json"></i>
+                        <span>REST Apis</span>
+                    </div>
+                    <div class="skill-pill fw-bold fs-5 mb-4 mx-3">
+                        <i class="bi bi-code-slash"></i>
+                        <span>Node Js</span>
+                    </div>
+                    <div class="skill-pill fw-bold fs-5 mb-4 mx-3">
+                        <i class="bi bi-git"></i>
+                        <span>GIT</span>
+                    </div>
+                    <div class="skill-pill fw-bold fs-5 mb-4 mx-3">
+                        <i class="bi bi-people"></i>
+                        <span>Multi Tenant Applications</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Skills -->
+
+
+    </section>
+    <!-- About Section -->
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="w-50">
+            <p class="text-muted">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia voluptatibus, amet nemo reprehenderit
+                at adipisci sit aliquam impedit molestias autem, architecto praesentium nostrum eum neque ipsam atque!
+                Voluptatibus fuga animi ut cupiditate debitis! Repudiandae, voluptatibus atque veritatis maxime illum
+                quasi deleniti temporibus officiis perferendis ducimus optio, ratione at explicabo. Necessitatibus.
+            </p>
+        </div>
+    </section>
+    <!-- Projects Section -->
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title">Contact</h2>
+        <div class="w-50">
+            <p class="text-muted">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia voluptatibus, amet nemo reprehenderit
+                at adipisci sit aliquam impedit molestias autem, architecto praesentium nostrum eum neque ipsam atque!
+                Voluptatibus fuga animi ut cupiditate debitis! Repudiandae, voluptatibus atque veritatis maxime illum
+                quasi deleniti temporibus officiis perferendis ducimus optio, ratione at explicabo. Necessitatibus.
+            </p>
+        </div>
+    </section>
+    <!-- Contact Section -->
+
+    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
